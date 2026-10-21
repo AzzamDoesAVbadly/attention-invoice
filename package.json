@@ -1,0 +1,11 @@
+{
+  "name": "attention-invoice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A browser extension that bills you weekly for the time you give the feed. Itemized receipt included.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "license": "MIT"
+}

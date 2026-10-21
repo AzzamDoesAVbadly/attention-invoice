@@ -1,0 +1,42 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  width: 380px;
+  padding: 12px;
+  background: #16130f;
+  color: #ebe4cc;
+  font: 13px/1.4 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+header { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; }
+header b { font: 900 15px/1 "Arial Narrow", "Helvetica Neue", Arial, sans-serif; letter-spacing: 0.04em; color: #ffd400; }
+button {
+  font: 700 12px/1 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  padding: 7px 10px;
+  border: 2px solid #000;
+  background: #ebe4cc;
+  color: #16130f;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #000;
+}
+button:active { transform: translate(2px, 2px); box-shadow: none; }
+button:focus-visible, input:focus-visible { outline: 2px solid #ff6a13; outline-offset: 1px; }
+.weeks { display: flex; gap: 4px; }
+.weeks button { padding: 5px 8px; font-size: 11px; }
+.weeks [aria-checked="true"] { background: #ffd400; }
+.now { margin: 0 0 8px; color: #a89e88; font: 11px/1.4 Menlo, Consolas, monospace; }
+.now.live { color: #c8ff1a; }
+canvas { display: block; width: 100%; height: auto; filter: drop-shadow(3px 3px 0 #000); }
+.actions { display: flex; gap: 8px; margin: 12px 0; }
+.actions button { flex: 1; }
+.primary { background: #ff6a13; }
+details { border-top: 1px dashed #47413a; padding-top: 8px; }
+summary { cursor: pointer; font-weight: 700; }
+form { display: flex; gap: 6px; margin: 8px 0 4px; }
+input { flex: 1; font: 13px Menlo, Consolas, monospace; padding: 6px 8px; border: 2px solid #000; background: #fbf8f0; color: #16130f; }
+.hint { margin: 4px 0; color: #8c8576; font-size: 11px; }
+ul { list-style: none; margin: 6px 0 0; padding: 0; }
+li { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; border-bottom: 1px dotted #47413a; font-family: Menlo, Consolas, monospace; }
+li button { padding: 2px 7px; box-shadow: none; }
+footer { margin-top: 10px; color: #8c8576; font-size: 11px; }
+footer a { color: #2fb5a8; }

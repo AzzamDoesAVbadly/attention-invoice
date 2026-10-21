@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Attention Invoice",
+  "version": "1.0.0",
+  "description": "Bills you weekly for the time you give the feed. Itemized receipt included. Everything stays on your device.",
+  "homepage_url": "https://machinemadegod.pages.dev/lab/attention-invoice/",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Attention Invoice",
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "idle",
+    "alarms"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.youtu.be/*",
+    "*://*.tiktok.com/*",
+    "*://*.instagram.com/*",
+    "*://*.x.com/*",
+    "*://*.twitter.com/*",
+    "*://*.reddit.com/*",
+    "*://*.facebook.com/*",
+    "*://*.linkedin.com/*",
+    "*://*.twitch.tv/*",
+    "*://*.netflix.com/*",
+    "*://*.threads.net/*",
+    "*://*.threads.com/*",
+    "*://*.bsky.app/*",
+    "*://*.pinterest.com/*",
+    "*://*.snapchat.com/*",
+    "*://*.news.ycombinator.com/*"
+  ],
+  "optional_host_permissions": [
+    "*://*/*"
+  ],
+  "minimum_chrome_version": "116"
+}

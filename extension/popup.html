@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Attention Invoice</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <b>ATTENTION INVOICE</b>
+      <div class="weeks" role="radiogroup" aria-label="Billing period">
+        <button type="button" role="radio" aria-checked="true" data-week="0">This week</button>
+        <button type="button" role="radio" aria-checked="false" data-week="-1">Last week</button>
+      </div>
+    </header>
+    <p class="now" data-now>Not billing right now.</p>
+    <canvas data-receipt aria-label="Your attention invoice"></canvas>
+    <div class="actions">
+      <button type="button" class="primary" data-download>Download receipt</button>
+      <button type="button" data-pause>Pause billing</button>
+    </div>
+    <details>
+      <summary>Bill me for another site</summary>
+      <form data-add>
+        <input name="domain" placeholder="example.com" autocomplete="off" spellcheck="false" aria-label="Domain to track" />
+        <button type="submit">Add</button>
+      </form>
+      <p class="hint">Chrome will ask you to allow it. Tracked out of the box: YouTube, TikTok, Instagram, X, Reddit, Facebook, LinkedIn, Twitch, Netflix, Threads, Bluesky, Pinterest, Snapchat, Hacker News.</p>
+      <ul data-custom></ul>
+    </details>
+    <footer>Nothing leaves this device. This extension has no internet access. <a href="https://machinemadegod.pages.dev/lab/attention-invoice/" target="_blank" rel="noopener">MMG LABS</a></footer>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
